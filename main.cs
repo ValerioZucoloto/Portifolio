@@ -2,21 +2,16 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    int x, soma=0;
+    int entrada, maior = -9999;
 
-    Console.WriteLine("Entre com um número: ");
-    x = int.Parse (Console.ReadLine());
-    soma = soma + x;
+    for (int i=0; i < 3; i++) {
+        Console.WriteLine("Digite um número: ");
+        entrada = int.Parse (Console.ReadLine());
+        if (entrada > maior) {
+                maior = entrada;
+        }
 
-    while (soma < 200) {
-      Console.WriteLine ("Entre com um número: ");
-      x = int.Parse (Console.ReadLine());
-
-      soma = soma + x;
-
-
+        Console.WriteLine ("O maior valor é {0}", maior);
     }
-
-
   }
 }
