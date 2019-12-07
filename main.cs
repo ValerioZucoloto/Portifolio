@@ -2,21 +2,18 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    int x, soma=0;
+        Console.WriteLine ("Qual a hora atual?");
+                int hora = int.Parse(Console.ReadLine());
 
-    Console.WriteLine("Entre com um número: ");
-    x = int.Parse (Console.ReadLine());
-    soma = soma + x;
-
-    while (soma < 200) {
-      Console.WriteLine ("Entre com um número: ");
-      x = int.Parse (Console.ReadLine());
-
-      soma = soma + x;
-
-
-    }
-
-
+        if (hora < 12) {
+                Console.WriteLine("Bom dia!");
+        }
+        else if (hora >= 12 && hora < 18) {
+                Console.WriteLine ("Boa tarde!");
+        }
+        else if (hora >= 18) {
+                Console.WriteLine ("Boa noite!");
+        }
+        
   }
 }
