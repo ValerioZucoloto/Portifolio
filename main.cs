@@ -2,21 +2,21 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    int x, soma=0;
+    //Faça um Programa que leia um vetor de 10 números reais e mostre-os na ordem inversa.
+        float y = 0;
+        float[] x = new float [4];
 
-    Console.WriteLine("Entre com um número: ");
-    x = int.Parse (Console.ReadLine());
-    soma = soma + x;
+        for (int i=0; i < x.Length; i++) {
+                Console.WriteLine("Informe um número: ");
+                x[i] = float.Parse(Console.ReadLine());
+        }
 
-    while (soma < 200) {
-      Console.WriteLine ("Entre com um número: ");
-      x = int.Parse (Console.ReadLine());
-
-      soma = soma + x;
+        Console.WriteLine();
 
 
-    }
-
+        for(int i = 3; i >= 0; i--){
+                Console.WriteLine(x[i]);
+        }
 
   }
 }
