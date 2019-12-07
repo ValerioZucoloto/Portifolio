@@ -2,20 +2,25 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    int x, soma=0;
+          Console.WriteLine("Digite um número: ");
+                double x = double.Parse (Console.ReadLine());
 
-    Console.WriteLine("Entre com um número: ");
-    x = int.Parse (Console.ReadLine());
-    soma = soma + x;
+        double raiz = Math.Sqrt (x);
 
-    while (soma < 200) {
-      Console.WriteLine ("Entre com um número: ");
-      x = int.Parse (Console.ReadLine());
+        Console.WriteLine (raiz.ToString ("F3"));
+        
+        while (x >= 0.0 ) {
+                Console.Write("Digite outro número: ");
+                        x = double.Parse (Console.ReadLine());
 
-      soma = soma + x;
+                        raiz = Math.Sqrt (x);
+                        Console.WriteLine (raiz.ToString ("F3"));
+
+         }
+
+         Console.WriteLine ("Número negativo!");
 
 
-    }
 
 
   }
