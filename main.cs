@@ -2,30 +2,18 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    int n1, n2, n3, pesoN1, pesoN2, pesoN3;
-   float media;
+    int N, horas,minutos,segundos,resto;
 
-   
-   Console.WriteLine("Informe a primeira nota: ");
-   n1 = int.Parse (Console.ReadLine());
-   Console.WriteLine ("Informe o peso da N1: ");
-   pesoN1 = int.Parse (Console.ReadLine());
+    N = int.Parse (Console.ReadLine());
 
+    horas = N / 3600;
+    resto = N % 3600;
 
-   Console.WriteLine("Informe a segunda nota: ");
-   n2 = int.Parse (Console.ReadLine());
-   Console.WriteLine ("Informe o peso da N2: ");
-   pesoN2 = int.Parse (Console.ReadLine());
+    minutos = resto / 60;
+    segundos = resto % 60;
 
-   Console.WriteLine("Informe a terceira nota: ");
-   n3 = int.Parse (Console.ReadLine());
-   Console.WriteLine ("Informe o peso da N3: ");
-   pesoN3 = int.Parse (Console.ReadLine());
+    Console.WriteLine (horas + ":" + minutos +  ":" + segundos);
 
-   media = (n1*pesoN1 + n2*pesoN2 + n3*pesoN3);
-   media /= 100;
-
-   Console.WriteLine("A média ponderada das notas do aluno é: " + media.ToString("F2"));
-   
+    Console.ReadLine();
   }
 }
