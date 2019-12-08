@@ -1,22 +1,27 @@
 using System;
+using System.IO;
 
 class MainClass {
   public static void Main (string[] args) {
-    int x, soma=0;
 
-    Console.WriteLine("Entre com um número: ");
-    x = int.Parse (Console.ReadLine());
-    soma = soma + x;
+        Console.WriteLine ("Digite um texto: ");
+        string texto = Console.ReadLine();  
 
-    while (soma < 200) {
-      Console.WriteLine ("Entre com um número: ");
-      x = int.Parse (Console.ReadLine());
+        try {
+                StreamWriter escritor = File.AppendText("Nome.txt");
+                escritor.WriteLine (texto);
+                Console.WriteLine ("Arquivo gerado !"); 
+        }
+        catch (IOException e) {
+                Console.WriteLine ("Erro !");
+                Console.WriteLine (e.Message);
+        }
 
-      soma = soma + x;
+        StreamReader leitor = new StreamReader ("Nome.txt");
+        string lido = leitor.ReadToEnd();
 
+        Console.WriteLine(lido);
 
-    }
-
-
-  }
+    
+    } 
 }
