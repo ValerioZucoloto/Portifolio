@@ -2,21 +2,47 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    int x, soma=0;
+    int porta, chute;
 
-    Console.WriteLine("Entre com um número: ");
-    x = int.Parse (Console.ReadLine());
-    soma = soma + x;
+    Console.WriteLine ("Informe a porta: ");
+    porta = int.Parse (Console.ReadLine());
 
-    while (soma < 200) {
-      Console.WriteLine ("Entre com um número: ");
-      x = int.Parse (Console.ReadLine());
-
-      soma = soma + x;
+    
 
 
+    for (int i=0; i < 5; i++) {
+      
+      Console.WriteLine ("Primeiro jogador, digite um chute: ");
+      chute = int.Parse (Console.ReadLine());
+      if (chute == porta) {
+        Console.WriteLine ("Você me achou !");
+        break;
+      }
+
+      if (chute < porta) {
+        Console.WriteLine ("Estou mais a direita !");
+      }
+
+      if (chute > porta) {
+        Console.WriteLine ("Estou mais a esquerda !");
+      }
+
+      Console.WriteLine ("Segundo jogador, digite um chute: ");
+      chute = int.Parse (Console.ReadLine());
+
+      if (chute == porta) {
+        Console.WriteLine ("Você me achou !");
+        break;
+      }
+
+      if (chute < porta) {
+        Console.WriteLine ("Estou mais a direita !");
+      }
+
+      if (chute > porta) {
+        Console.WriteLine ("Estou mais a esquerda !");
+      }
+    
     }
-
-
   }
 }
