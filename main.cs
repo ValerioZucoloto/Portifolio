@@ -1,22 +1,38 @@
 using System;
+using System.Collections.Generic;
 
 class MainClass {
   public static void Main (string[] args) {
-    int x, soma=0;
+    Console.WriteLine ();
 
-    Console.WriteLine("Entre com um número: ");
-    x = int.Parse (Console.ReadLine());
-    soma = soma + x;
+    Console.WriteLine ("Informe quantos funcionários serão registrados: ");
+    int x = int.Parse (Console.ReadLine());
 
-    while (soma < 200) {
-      Console.WriteLine ("Entre com um número: ");
-      x = int.Parse (Console.ReadLine());
+    List <Funcionario> list = new List<Funcionario>();
 
-      soma = soma + x;
-
-
+    for (int i=1; i <= x; i++) {
+            Console.WriteLine ("Funcionário # " + i + ":");
+            Console.Write ("Nome: ");
+            string nome = Console.ReadLine();
+            Console.Write ("ID: ");
+            int id = int.Parse (Console.ReadLine());
+            Console.Write("Salário: ");
+            double salario = double.Parse (Console.ReadLine());
+            list.Add (new Funcionario(nome,id, salario));
+            Console.WriteLine();
     }
 
+    Console.WriteLine ("Qual o ID do funcionário que terá o salário incrementado ? ");
+    int Idsorte = int.Parse (Console.ReadLine());
 
+    Funcionario func = list.Find (n => n.Id == Idsorte);
+    if (func != null) {
+            Console.WriteLine("Qual a porcentagem que deseja aumentar? ");
+            int n = int.Parse(Console.ReadLine());
+            func.IncrementarSalario(n);
+    }
+    else{
+            Console.WriteLine ("Código ID inexistente!");
+    }
   }
 }
