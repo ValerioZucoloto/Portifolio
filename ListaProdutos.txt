@@ -1,0 +1,5 @@
+1015, Refrigetante, 5,90, 10
+2040, Misto Frito, 3,90, 8
+1480, Suco de fruta, 4,50 15
+6523, Àgua mineral, 3,99, 4
+5985, Refrigerante 2LT, 8,90, 20
