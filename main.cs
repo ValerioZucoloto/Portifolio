@@ -2,21 +2,31 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    int x, soma=0;
 
-    Console.WriteLine("Entre com um número: ");
-    x = int.Parse (Console.ReadLine());
-    soma = soma + x;
+    Robo r1 = new Robo("r1", 25, 100, 100, "normal");
+    Robo r2 = new Robo("r2", 30, 100, 100, "normal");
 
-    while (soma < 200) {
-      Console.WriteLine ("Entre com um número: ");
-      x = int.Parse (Console.ReadLine());
+    Console.WriteLine(r1.RealizarAtaque(r2));
+    // r1.RealizarAtaque(r2);
+    // r1.RealizarAtaque(r2);
+    // r1.RealizarAtaque(r2);
+    // r1.RealizarAtaque(r2);
+    // r1.RealizarAtaque(r2);
+    // r1.RealizarAtaque(r2);
+    // r1.RealizarAtaque(r2);
+    // Console.WriteLine();
 
-      soma = soma + x;
+    // Robo r3 = new Robo("r3", 25, 100, 100, "indefeso");
+    // Robo r4 = new Robo("r3", 25, 100, 100, "normal");
+
+    // r3.RealizarAtaque(r4);
+    r1.DoarForcaDefesa(r2, 30);
 
 
-    }
 
+
+    
+    
 
   }
 }
