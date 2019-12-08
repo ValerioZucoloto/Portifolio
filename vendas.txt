@@ -1,0 +1,80 @@
+Cliente: Arley
+Produto: Suco 100ML
+Preço: 9.90
+
+Cliente: Arley
+Produto: Leite 300ML
+Preço: 5.80
+
+Cliente: Arley
+Produto: Suco 100ML
+Preço: 9.90
+
+Cliente: Arley
+Produto: Leite 300ML
+Preço: 5.80
+
+Cliente: Arley
+Produto: Suco 100ML
+Preço: 9.90
+
+Cliente: Arley
+Produto: Leite 300ML
+Preço: 5.80
+
+Cliente: Arley
+Produto: Suco 100ML
+Preço: 9.90
+
+Cliente: Arley
+Produto: Leite 300ML
+Preço: 5.80
+
+Cliente: Arley
+Produto: Suco 100ML
+Preço: 9.90
+
+Cliente: Arley
+Produto: Leite 300ML
+Preço: 5.80
+
+Cliente: Arley
+Produto: Suco 100ML
+Preço: 9.90
+
+Cliente: Arley
+Produto: Leite 300ML
+Preço: 5.80
+
+Cliente: Arley
+Produto: Suco 100ML
+Preço: 9.90
+
+Cliente: Arley
+Produto: Leite 300ML
+Preço: 5.80
+
+Cliente: Arley
+Produto: Suco 100ML
+Preço: 9.90
+
+Cliente: Arley
+Produto: Leite 300ML
+Preço: 5.80
+
+Cliente: Arley
+Produto: REFRIGERANTE 100ML
+Preço: 9.90
+
+Cliente: Arley
+Produto: Leite 300ML
+Preço: 5.80
+
+Cliente: Valério
+Produto: REFRIGERANTE 100ML
+Preço: 9.90
+
+Cliente: Valério
+Produto: Leite 300ML
+Preço: 5.80
+

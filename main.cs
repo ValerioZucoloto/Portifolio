@@ -1,22 +1,45 @@
 using System;
+using System.IO;
+using System.Collections.Generic;
 
-class MainClass {
-  public static void Main (string[] args) {
-    int x, soma=0;
+namespace Ifood {
+    class MainClass {
+        public static void Main(string[] args) {
 
-    Console.WriteLine("Entre com um número: ");
-    x = int.Parse (Console.ReadLine());
-    soma = soma + x;
+            //Exibe todos os produtos cadastrados
+            Produto.VerLista();
 
-    while (soma < 200) {
-      Console.WriteLine ("Entre com um número: ");
-      x = int.Parse (Console.ReadLine());
+            //Local onde é salvo as vendas
+            string vendas = "vendas.txt";
 
-      soma = soma + x;
+            Console.WriteLine();
+
+            List<Produto> produtos = new List<Produto>();
+            Compra compra;
+
+            //Inicialização do Objeto Cliente
+            Cliente cliente = new Cliente("Valério");
+
+            //Inicialização do Objeto produto
+            Produto produto1 = new Produto("REFRIGERANTE 100ML", 9.90, 10);
+            Produto produto2 = new Produto("Leite 300ML", 5.80, 5);
+
+            //Adiciona produtos na lista
+            produtos.Add(produto1);
+            produtos.Add(produto2);
+
+            //instanciação do objeto da compra
+            compra = new Compra(produtos, cliente);
+
+            //Salva a venda no arquivo
+            Compra.SalvarVenda(compra);
 
 
+            Console.WriteLine(cliente.exibir());
+            Console.WriteLine(compra.GetTotal().ToString("F2"));
+
+            Console.ReadKey();
+
+        }
     }
-
-
-  }
 }
